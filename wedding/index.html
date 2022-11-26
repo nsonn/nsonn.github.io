@@ -8,39 +8,63 @@
 <meta name="description" content="RSVP for the wedding of Marcus and Nathan.">
 <meta name="robots" content="noindex">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i|Raleway:400,400i">
 <style>
 /* Grabbed from perfectmotherfuckingwebsite.com with permission (CC0) */
 
 body {
-	max-width: 650px;
-	margin: 40px auto;
-	padding: 0 10px;
 	font: 18px/1.5 Raleway, Arial, sans-serif;
 	color: #444;
 	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+header, footer {
+	height: 100px;
+	width: 100%;
+	background: black url("brueghel_flowers_bg.jpg") no-repeat fixed center;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
+div#header_text {
+	text-align: center;
+	background-color: white;
+	padding: 1rem 0;
+}
+
+main {
+	max-width: 650px;
+	margin: 0 auto 40px auto;
+	padding: 40px 10px;
 }
 
 h1, h2, h3 {
 	line-height: 1.2;
 	font-family: "Playfair Display";
+	font-weight: 700;
 	margin-top: 1.5em;
 	margin-bottom: 1rem;
 }
 
 h1 {
 	font-size: 76px;
+	font-weight: 400;
 	margin: 0;
-	border-bottom: 1px solid;
 	text-align: center;
+}
+
+h1 span {
+	font-weight: 700;
+	font-style: italic;
 }
 
 h1.smallh1 {
 	font-size: 33px;
 	text-transform: uppercase;
-	font-weight: 200;
 	margin: 0;
-	border-bottom: none;
 }
 
 h2 {
@@ -48,12 +72,19 @@ h2 {
 	font-variant: small-caps;
 }
 
+img {
+	width: 60%;
+	margin: 2rem auto;
+	border-radius: 50%;
+	display: block;
+}
+
 a.button, a.button:link, a.button:visited {
 	padding: 1em;
-	background-color: gray;
+	background-color: #872508;
 	color: white;
 	text-decoration: none;
-	display: block;
+	display: inline-block;
 	border-radius: 3px;
 }
 
@@ -61,7 +92,22 @@ p.center {
 	text-align: center;
 }
 
-@media (prefers-color-scheme: dark) {
+a.locationCard {
+	border: 1px solid #ddd;
+	padding: 1em;
+	border-radius: 5px;
+	margin: 2px 0;
+	display: block;
+	text-decoration: none;
+}
+
+
+a.locationCard h3, div.locationCard p {
+	text-decoration: none;
+	color: #444;
+}
+
+/** @media (prefers-color-scheme: dark) {
 	body {
 		color:#c9d1d9;
 		background: #0d1117;
@@ -75,19 +121,20 @@ p.center {
 	color: #8e96f0;
 	}
 }
+**/
 
 </style>
 </head>
 
 <body>
 
-<h1>Marcus & Nathan</h1><h1 class="smallh1">Saturday, May 20, 2023 • Laramie, WY</h1>
+<main>
 
-<h2>Celebrate with us!</h2>
-<p>St. Paul’s United Church of Christ<br />
-602 E. Garfield, Laramie, Wyoming</p>
+<img src="photo_square.jpg">
 
-<p>A reception will follow in the church’s lower level.</p>
+<h1><span>Nathan</span> & <span>Marcus</span></h1><h1 class="smallh1">Saturday, May 20, 2023</h1>
+
+<p class="center">St. Paul’s United Church of Christ, 602 E. Garfield, Laramie, Wyoming<br />A light meal will follow in the church’s lower level.</p>
 
 <h2>Reservations</h2>
 
@@ -97,9 +144,11 @@ p.center {
 
 <h2>Registry</h2>
 
-<p>In lieu of a registry, please consider contributing to our honeymoon fund (cash, check, or Venmo). We appreciate it!</p>
+<p>In lieu of a registry, please consider contributing to our honeymoon fund via cash, check, or <a href="https://venmo.com/sonnenschein">Venmo</a>. We appreciate it!</p>
 
 <h2>Our Story</h2>
+
+<img src="photo_carry_square.jpg">
 
 <p>The two of us met as undergraduates at the University of Wyoming in 2019. We became fast friends through church, then started dating in October of that year. After graduation, we spent a year in a long-distance relationship while Nathan started grad school in Illinois and Marcus pursued a service year in Miami. Marcus moved to Illinois in summer 2020 to live with Nathan, where we weathered the pandemic together. After Nathan graduated in 2022, we moved to Billings, Montana, where Nathan works as a librarian at Montana State University Billings and Marcus works as the Youth Director at First Congregational Church while attending seminary online. After 4 years together, we are so excited to be married.</p>
 
@@ -113,47 +162,40 @@ p.center {
 
 <h2>Things to Do</h2>
 
-<a href="http://www.uwyo.edu/artmuseum/">
-<div class="locationCard">
+<a href="http://www.uwyo.edu/artmuseum/" class="locationCard">
 <h3>UW Art Museum</h3>
 <p>A small but well-curated art museum on the university campus.</p>
-</div>
 </a>
 
-<a href="https://wyoparks.wyo.gov/index.php/places-to-go/curt-gowdy">
-<div class="locationCard">
+<a href="https://wyoparks.wyo.gov/index.php/places-to-go/curt-gowdy" class="locationCard">
 <h3>Curt Gowdy State Park</h3>
 <p>An outdoorsy place.</p>
-</div>
 </a>
 
-<a href="https://travelwyoming.com/article/hike-bike-climb-and-camp-vedauwoo-recreation-area">
-<div class="locationCard">
+<a href="https://travelwyoming.com/article/hike-bike-climb-and-camp-vedauwoo-recreation-area" class="locationCard">
 <h3>Vedauwoo</h3>
 <p>Lots of big rocks.</p>
-</div>
 </a>
 
-<a href="https://travelwyoming.com/listings/snowy-range-scenic-byway/">
-<div class="locationCard">
+<a href="https://travelwyoming.com/listings/snowy-range-scenic-byway/" class="locationCard">
 <h3>Snowy Range</h3>
 <p>A scenic drive on Highway 130 through forests and mountains.</p>
-</div>
 </a>
 
-<a href="https://www.sweetmelissacafe.com/">
-<div class="locationCard">
+<a href="https://www.sweetmelissacafe.com/" class="locationCard">
 <h3>Sweet Melissa’s</h3>
-<p>Our favorite Laramie restaurant, with great vegetarian options.</p>
-</div>
+<p>Our favorite Laramie restaurant!</p>
 </a>
 
-<a href="https://wyoparks.wyo.gov/index.php/places-to-go/wyoming-territorial-prison">
-<div class="locationCard">
+<a href="https://wyoparks.wyo.gov/index.php/places-to-go/wyoming-territorial-prison" class="locationCard">
 <h3>Wyoming Territorial Prison</h3>
-<p>A great way to learn about some unique Wyoming history.</p>
-</div>
+<p>Prisons suck, but this one makes a cool museum.</p>
 </a>
+
+</main>
+
+<footer>
+</footer>
 
 </body>
 </html>
