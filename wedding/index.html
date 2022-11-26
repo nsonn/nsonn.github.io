@@ -20,7 +20,7 @@ body {
 	padding: 0;
 }
 
-header, footer {
+footer {
 	height: 100px;
 	width: 100%;
 	background: black url("brueghel_flowers_bg.jpg") no-repeat fixed center;
@@ -86,25 +86,40 @@ a.button, a.button:link, a.button:visited {
 	text-decoration: none;
 	display: inline-block;
 	border-radius: 3px;
+	transition-duration: .1s;
+	transition-timing-function: ease-in-out;
+}
+
+a.button:hover, a.button:active {
+	background-color: #43658c;
 }
 
 p.center {
 	text-align: center;
 }
 
-a.locationCard {
-	border: 1px solid #ddd;
-	padding: 1em;
-	border-radius: 5px;
-	margin: 2px 0;
+a.locationCard, a.locationcard:link {
+	border: 0;
+	padding: 2em;
+	border: 3px solid #872508;
+	border-width: 2px 7px 7px 2px;
+	margin: 10px 0;
 	display: block;
 	text-decoration: none;
+	border-radius: 15px;
+	transition-duration: .1s;
+	transition-timing-function: ease-in-out;
+}
+
+a.locationCard:hover, a.locationCard:active {
+	border-color: #43658c;
 }
 
 
-a.locationCard h3, div.locationCard p {
+a.locationCard h3, a.locationCard p {
 	text-decoration: none;
 	color: #444;
+	margin: 0;
 }
 
 /** @media (prefers-color-scheme: dark) {
@@ -118,7 +133,7 @@ a.locationCard h3, div.locationCard p {
 	}
 
 	a:visited {
-	color: #8e96f0;
+		color: #8e96f0;
 	}
 }
 **/
@@ -132,9 +147,11 @@ a.locationCard h3, div.locationCard p {
 
 <img src="photo_square.jpg">
 
-<h1><span>Nathan</span> & <span>Marcus</span></h1><h1 class="smallh1">Saturday, May 20, 2023</h1>
+<h1><span>Nathan</span> & <span>Marcus</span></h1><h1 class="smallh1">Saturday, May 20, 2023 • 1PM</h1>
 
-<p class="center">St. Paul’s United Church of Christ, 602 E. Garfield, Laramie, Wyoming<br />A light meal will follow in the church’s lower level.</p>
+<p class="center">St. Paul’s United Church of Christ<br />602 E. Garfield • Laramie, Wyoming</p>
+
+<p class="center">A light meal will follow in the church’s lower level.</p>
 
 <h2>Reservations</h2>
 
